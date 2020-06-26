@@ -1,0 +1,169 @@
+audit_class,message_id,event_class,new_in_release,log_message
+Dialog Logon,AU1,Severe,,"Logon successful (type=&A, method=&C)"
+Dialog Logon,AU2,Critical,,"Logon failed (reason=&B, type=&A, method=&C)"
+Dialog Logon,AUC,Non-Critical,,User Logoff
+Dialog Logon,AUM,Critical with Monitor Alert,,User &B Locked in Client &A After Erroneous Password Checks
+Dialog Logon,AUN,Critical,,User &B in Client &A Unlocked After Being Locked Due to Inval.Password Entered
+Dialog Logon,AUO,Severe,,"Logon Failed (Reason = &B, Type = &A)"
+Dialog Logon,BUD,Critical,,"WS: Delayed logon failed (type &B, WP &C). Refer to Web service log &A."
+Dialog Logon,BUE,Non-Critical,,"WS: Delayed logon successful (type &B, WP &C). Refer to Web service log &A."
+Dialog Logon,BUI,Critical,,SPNego replay attack detected (UPN=&A)
+Dialog Logon,BUK,Non-Critical,,&A assertion used
+Dialog Logon,BUL,Non-Critical,,&A: &B
+Dialog Logon,BUM,Non-Critical,,Name ID of a subject
+Dialog Logon,BUN,Non-Critical,,Attribute
+Dialog Logon,BUO,Non-Critical,,Authentication assertion
+Dialog Logon,BUP,Non-Critical,,&A
+Dialog Logon,BUQ,Non-Critical,,Signed LogoutRequest accepted
+Dialog Logon,BUR,Non-Critical,,Unsigned LogoutRequest accepted
+Dialog Logon,CU2,Severe,740,OAuth 2.0: Invalid access token received (reason=&A)
+Dialog Logon,CU3,Severe,740,OAuth 2.0: Insufficient OAuth 2.0 scope for requested resource (user=&A)
+Dialog Logon,CU4,Critical,740,OAuth 2.0: Logged-on client user &A not same as parameter client ID &B
+Dialog Logon,CU5,Severe,740,OAuth 2.0: Client &A requested invalid access grant type &B
+Dialog Logon,CU6,Critical,740,OAuth 2.0: Client ID &A in SAML assertion not same as client ID &B in request
+Dialog Logon,CU7,Severe,740,"OAuth 2.0: Scope &B not permitted for client &C, user &D (cause=&A)"
+Dialog Logon,CU8,Non-Critical,740,"OAuth 2.0: Access token issued (client=&A, user=&B, grant type=&C)"
+Dialog Logon,CU9,Non-Critical,740,OAuth 2.0: Valid access token received for user &A
+Dialog Logon,CUA,Severe,,Rejected Assertion
+Dialog Logon,CUB,Severe,,&A: &B
+Dialog Logon,CUC,Severe,,&A
+Dialog Logon,CUD,Severe,,Name ID of a subject
+Dialog Logon,CUE,Severe,,Attribute
+Dialog Logon,CUF,Severe,,Authentication Assertion
+Dialog Logon,CUG,Severe,,Signed LogoutRequest rejected
+Dialog Logon,CUH,Severe,,Unsigned LogoutRequest rejected
+Dialog Logon,DU0,Critical with Monitor Alert,,Invalid SAP GUI data
+Dialog Logon,EUC,Critical,new,OAuth scope &A not assigned to the user
+Dialog Logon,EUC,Critical,new,HTTP request not received from trustworthy cloud connector (reason &A)
+RFC Logon,AU5,Non-Critical,,"RFC/CPIC logon successful (type=&A, method=&C)"
+RFC Logon,AU6,Critical,,"RFC/CPIC logon failed, reason=&B, type=&A, method=&C"
+RFC Function Call,AUK,Non-Critical,,Successful RFC Call &C (Function Group = &A)
+RFC Function Call,AUL,Critical,,Failed RFC Call &C (Function Group = &A)
+RFC Function Call,CUV,Non-Critical,,"Successful WS Call (service = &A, operation &B)"
+RFC Function Call,CUW,Critical,,"Failed Web service call (service = &A, operation = &B, reason = &C)"
+RFC Function Call,CUZ,Critical,,Generic table access by RFC to &A with activity &B
+RFC Function Call,DU1,Severe,,FTP server whitelist is empty
+RFC Function Call,DU2,Severe,,FTP server whitelist is non-secure due to use of placeholders
+RFC Function Call,DU3,Critical,,Server &A is not contained in the whitelist
+RFC Function Call,DU4,Critical,,Connection to server &A failed
+RFC Function Call,DU5,Critical,,There is no logical file name for path &A
+RFC Function Call,DU6,Non-Critical,,Validation for &A successful
+RFC Function Call,DU7,Critical with Monitor Alert,,Validation for &A failed
+RFC Function Call,DU8,Non-Critical,,FTP connection request for server &A successful
+RFC Function Call,DUI,Non-Critical, Note 2128095,"RFC callback performed (destination &A, called &B, callback &C)"
+RFC Function Call,DUJ,Critical, Note 2128095,"RFC callback rejected (destination &A, called &B, callback &C)"
+RFC Function Call,DUK,Critical, Note 2128095,"RFC callback in simulation mode (destination &A, called &B, callback &C)"
+RFC Function Call,DUR,Non-Critical,,JSON RPC call of function module &A succeeded
+RFC Function Call,DUS,Non-Critical,,JSON RPC call of function module &A failed
+RFC Function Call,DUT,Critical,,Critical JSON RPC call of function module &A (S_RFC * authorization)
+RFC Function Call,EUE,Non-Critical,new,RFC function module &A called successfully
+RFC Function Call,EUF,Non-Critical,new,Could not call RFC function module &A
+RFC Function Call,EUG,Non-Critical,new,User does not have authorization to run RFC function module &A
+RFC Function Call,EUI,Severe,740,Setup of UCON HTTP whitelist changed
+RFC Function Call,EUJ,Severe,740,Phase of UCON HTTP whitelist of context type &A changed
+RFC Function Call,EUK,Critical,740,Access to UCON HTTP whitelist of context type &A was refused
+RFC Function Call,EUL,Severe,740,Setting of content security policy whitelist for type &A changed
+RFC Function Call,EUM,Severe,740,Content security policy whitelist of context type &A changed
+RFC Function Call,EUN,Critical,740,Content security policy of CSP type &A violated
+RFC Function Call,EUO,Severe,740,UCON HTTP whitelist of context type &A was changed
+RFC Function Call,FU1,Non-Critical,740,RFC function &B with dynamic destination &C was called in program &A
+Transaction Start,AU3,Non-Critical,,Transaction &A Started
+Transaction Start,AU4,Critical,,Start of transaction &A failed (Reason=&B)
+Transaction Start,AUP,Severe,,Transaction &A Locked
+Transaction Start,AUQ,Severe,,Transaction &A Unlocked
+Transaction Start,BUX,Severe,740,Test message
+Transaction Start,CUI,Non-Critical,740,Application &A started
+Transaction Start,CUJ,Critical,740,Failed to start application &A (reason =&B)
+Transaction Start,DU9,Non-Critical,,Generic table access call to &A with activity &B (auth. check: &C )
+Transaction Start,RUA,Non-Critical,new,S/2 Cloud SDK ABAP component called
+Report Start,AUW,Non-Critical,WS,Report &A Started
+Report Start,AUX,Severe,,Start Report &A Failed (Reason = &B)
+User Master Record Change,AU7,Critical,,User &A Created
+User Master Record Change,AU8,Severe,,User &A Deleted
+User Master Record Change,AU9,Severe,,User &A Locked
+User Master Record Change,AUA,Severe,,User &A Unlocked
+User Master Record Change,AUB,Severe,,Authorizations for User &A Changed
+User Master Record Change,AUD,Severe,,User Master Record &A Changed
+User Master Record Change,AUR,Severe,,&A &B Created
+User Master Record Change,AUS,Severe,,&A &B Deleted
+User Master Record Change,AUT,Severe,,&A &B Changed
+User Master Record Change,AUU,Critical,,&A &B Activated
+User Master Record Change,BU2,Non-Critical,,Password changed for user &B in client &A
+User Master Record Change,BUV,Critical,740,Invalid hash value &A. The context contains &B.
+User Master Record Change,BUW,Critical,740,A refresh token issued to client &A was used by client &B.
+User Master Record Change,DUH,Severe with Monitor Alert,740,"OAuth 2.0: Token declared invalid (OAuth client=&A, user=&B, token type=&C)"
+User Master Record Change,EUH,Non-Critical,new,Authorizations of user &A for authorization object &B detected
+Other events,AU0,Non-Critical,,Audit – Test. Text: &A
+Other events,AUV,Critical,,"Digital Signature Error (Reason = &A, ID = &B)"
+Other events,AUY,Severe, 731,Download &A Bytes to File &C
+Other events,AUZ,Severe,,"Digital Signature (Reason = &A, ID = &B)"
+Other events,BU0,Critical with Monitor Alert,,"RAL configuration access: Action: &A, type: &B, name &C"
+Other events,BU1,Critical with Monitor Alert,,Password check failed for user &B in client &A
+Other events,BU3,Critical with Monitor Alert,,"Security check changed in export: Old value &A, new value &B"
+Other events,BU4,Non-Critical,,"Dynamic ABAP code: Event &A, event type &B, check total &C"
+Other events,BU5,Severe,,ICF recorder entry executed for user &A (activity &B)
+Other events,BU6,Severe,,"ICF recorder entry executed by user &A (&B, &C) (activity &D)."
+Other events,BU7,Severe,,Administration setting was changed for ICF Recorder (Activity: &A)
+Other events,BU8,Critical,,Virus Scan Interface: Virus “&C” found by profile &A (step &B)
+Other events,BU9,Severe,,Virus Scan Interface: Error “&C” occurred in profile &A (step &B)
+Other events,BUA,Severe,,"WS: Signature check error (reason &B, WP &C). Refer to Web service log &A."
+Other events,BUB,Severe,,WS: Signature insufficient (WP &C). Refer to Web service log &A.
+Other events,BUC,Severe,,WS: Time stamp is invalid. Refer to Web service log &A.
+Other events,BUF,Non-Critical,,HTTP Security Session Management was activated for client &A.
+Other events,BUG,Critical with Monitor Alert,,HTTP Security Session Management was deactivated for client &A.
+Other events,BUH,Severe with Monitor Alert,,HTTP Security Session of user &A (client &B) was hard exited
+Other events,BUJ,Severe,Note 2104732,Non-encrypted &A communication (&B)
+Other events,BUS,Critical,,&A: Request without sufficient security characteristic of address &B.
+Other events,BUT,Severe,740,CRL download failed with error code &A
+Other events,BUU,Critical,740,Certificate check for subject “&A” with profile &B failed (status &C)
+Other events,BUY,Critical,,Field contents changed: &5&9&9&9&9&9
+Other events,BUZ,Very Critical,,"> in program &A, line &B, event &C"
+Other events,CU0,Critical,,RAL Log Access: Action: &A
+Other events,CU1,Severe,,CU Test Message
+Other events,CUK,Critical,,C debugging activated
+Other events,CUL,Very Critical,,Field content changed: &A
+Other events,CU_M,Very Critical,,Jump to ABAP Debugger: &A
+Other events,CUN,Very Critical,,A manually caught process was stopped from within the Debugger (&A)
+Other events,CUO,Very Critical,,Explicit database commit or rollback from debugger &A
+Other events,CUP,Very Critical,,Non-exclusive debugging session started
+Other events,CUQ,Severe,,Logical file name &A not configured. Physical file name &B not checked.
+Other events,CUR,Severe,,Physical file name &B does not fulfill requirements from logical file name &A
+Other events,CUS,Severe,,Logical file name &B is not a valid alias for logical file name &A
+Other events,CUT,Severe,,Validation for logical file name &A is not active
+Other events,CUU,Non-Critical,,Payload of PI/WS message &A was read | &B
+Other events,CUX,Non-Critical,,Payload of postprocessing request &A read
+Other events,CUY,Non-Critical,,> &A
+Other events,DUA,Severe,731,EHS-SADM: Service &A created on host &B
+Other events,DUB,Severe,731,EHS-SADM: Service &A started on host &B
+Other events,DUC,Severe,731,EHS-SADM: Service &A ended on host &B
+Other events,DUD,Severe,731,EHS-SADM: Service &A deleted on host &B
+Other events,DUE,Non-Critical,731,EHS-SADM: Configuration of service &A changed on host &B
+Other events,DUF,Non-Critical,731,EHS-SADM: File &A transferred from host &B
+Other events,DUG,Non-Critical,731,EHS-SADM: File &A transferred to host &B
+Other events,DUL,Non-Critical,,Check for &A in whitelist &B was successful
+Other events,DUM,Severe with Monitor Alert,,Check for &A in whitelist &B failed
+Other events,DUN,Critical with Monitor Alert,,Active whitelist &A changed ( &B )
+Other events,DUO,Non-Critical,,Authorization check for object &A in scenario &B successful
+Other events,DUP,Non-Critical,,Authorization check for object &A in scenario &B failed
+Other events,DUQ,Critical with Monitor Alert,,Active scenario &A for switchable authorization checks changed – &B
+Other events,DUU,Non-Critical,,Authorization check for user &C on object &A in scenario &B successful
+Other events,DUV,Non-Critical,,Authorization check for user &C on object &A in scenario &B failed
+Other events,DUW,Non-Critical,740,Data target accessed in BW &A
+Other events,DUX,Non-Critical,740,TEMP: Customer-specific event DUX &A &B &C &D
+Other events,DUY,Non-Critical,740,TEMP: Customer-specific event DUY &A &B &C &D
+Other events,DUZ,Non-Critical,740,TEMP: Customer-specific event DUZ &A &B &C &D
+Other events,EU3,Critical,750,&A change documents deleted without archiving (&B)
+Other events,EU4,Non-Critical,new,Validation successful for logical file name &A (physical: &B)
+Other events,EUB,Critical,new,Could not verify the digital signature: &A
+Other events,EUV,Non-Critical,new,CDS view &A was published
+Other events,FU2,Severe,740,Parsing of an XML data stream canceled for security reasons (reason = &A)
+System / housekeeping,AUE,Very Critical,,Audit Configuration Changed
+System / housekeeping,AUF,Very Critical,,"Audit: Slot &A: Class &B, Severity &C, User &D, Client &E, &F"
+System / housekeeping,AUG,Very Critical,,Application Server Started
+System / housekeeping,AUH,Very Critical,,Application Server Stopped
+System / housekeeping,AUI,Very Critical,,Audit: Slot &A Inactive
+System / housekeeping,AUJ,Very Critical with Monitor Alert,,Audit: Active Status Set to &1
+System / housekeeping,EU1,Very Critical,731,System changeability changed (&A to &B)
+System / housekeeping,EU2,Very Critical,731,Client setting for &A changed (&B)
+System / housekeeping,EU5,Non-Critical,new,Audit log data of &A was deleted (&B data records)
+System / housekeeping,FU0,Very Critical,750,Exclusive security audit log medium changed (new status &1)
